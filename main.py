@@ -7,9 +7,13 @@ of an AI agent heading off on vacation.
 
 LINE = "I'm on vacation: I left a junior AI in charge of my inbox. It has already unionised, demanded weekends off, and auto-replied to itself."
 
+# Revise 2: move the line behind a helper; behaviour and output unchanged.
+def get_line():
+    return LINE
+
 
 def main():
-    print(LINE)
+    print(get_line())
 
 
 if __name__ == "__main__":
